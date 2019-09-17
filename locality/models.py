@@ -8,4 +8,11 @@ class departamento(models.Model):
 class municipio(models.Model):
     cod       = models.CharField(max_length=6, unique=True)
     name      = models.CharField(max_length=50)
-    id_depart = models.ForeignKey(departamento, on_delete=models.CASCADE)
+    depart    = models.ForeignKey(departamento, on_delete=models.PROTECT )
+
+class sede(models.Model):
+
+    dane      = models.CharField(max_length=20, unique=True)
+    name      = models.CharField(max_length=70)
+    details   = models.TextField()
+    municipio = models.ForeignKey(municipio, on_delete=models.PROTECT)

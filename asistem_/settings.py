@@ -40,7 +40,7 @@ INSTALLED_APPS = [
 
     # App asistem
     'locality',
-    'users'
+    'users',
 ]
 
 MIDDLEWARE = [

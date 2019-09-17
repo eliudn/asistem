@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 
-class LocalityConfig(AppConfig):
-    name = 'locality'
+class LocatilyConfig(AppConfig):
+    name = 'locatily'

@@ -15,5 +15,5 @@ class data_users(models.Model):
 
     user     = models.OneToOneField(User, on_delete=models.CASCADE)
     id_user  = models.CharField(max_length=20, unique=True)
-    id_type  = models.ForeignKey(type_id, on_delete = models.CASCADE)
-    id_munic = models.ForeignKey(geo.municipio, on_delete = models.CASCADE)
+    id_type  = models.ForeignKey(type_id, on_delete = models.PROTECT)
+    municipo = models.ForeignKey(geo.municipio, on_delete = models.PROTECT)
