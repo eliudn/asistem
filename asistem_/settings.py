@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     # App asistem
     'locality',
     'users',
+    'testDb',
 ]
 
 MIDDLEWARE = [
